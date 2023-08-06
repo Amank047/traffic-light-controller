@@ -58,7 +58,7 @@ module Traffic_Light_Controller(
                         end
 
                 S2: if(count<sec2)
-					 begin
+			begin
                         ps<=S2;
                         count<=count+1;
                         end
@@ -88,7 +88,7 @@ module Traffic_Light_Controller(
                         end
 
                     else
-						  begin
+			begin
                         ps<=S5;
                         count<=0;
                         end
@@ -98,7 +98,7 @@ module Traffic_Light_Controller(
                         ps<=S5;
                         count<=count+1;
                         end
-								else
+		   else
                         begin
                         ps<=S6;
                         count<=0;
@@ -115,7 +115,7 @@ module Traffic_Light_Controller(
                         ps<=S1;
                         count<=0;
                         end
-								default: ps<=S1;
+		   default: ps<=S1;
                 endcase
             end   
 
@@ -179,7 +179,7 @@ module Traffic_Light_Controller(
                        light_MT<=3'b000;
                        light_S<=3'b000;
                     end
-						  endcase
+		 endcase
             end                
               
 endmodule
